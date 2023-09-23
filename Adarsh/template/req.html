@@ -89,13 +89,13 @@ function openModifiedURL() {
         var urlParts = currentUrl.split("/watch/");
         var restUrl = urlParts[1];
         // URL has a '?hash=' parameter, use it
-        var targetUrl = "https://watchkeeda.blogspot.com/?token=https://vivdisk.pro/" + encodeURIComponent(restUrl) + "&filename={{file_name}}&dest={{file_store_link}}";
+        var targetUrl = "https://watchkeeda.blogspot.com/?token=https://streaam.streaam.in/" + encodeURIComponent(restUrl) + "&filename={{file_name}}&dest={{file_store_link}}";
     } else {
         // URL does not have a '?hash=' parameter
         var urlParts = currentUrl.split("/watch/");
         var videoId = urlParts[1].split(/[^\d]+/).filter(Boolean).join('');
         var textPart = urlParts[1].split(/[0-9]+/).filter(Boolean).join('');
-        var targetUrl = "https://watchkeeda.blogspot.com/?token=https://vivdisk.pro/" + videoId + "/video.mp4?hash=" + textPart +  "&filename={{file_name}}&dest={{file_store_link}}";
+        var targetUrl = "https://watchkeeda.blogspot.com/?token=https://streaam.streaam.in/" + videoId + "/video.mp4?hash=" + textPart +  "&filename={{file_name}}&dest={{file_store_link}}";
     }
 
     // Open the constructed URL in a new tab or window
