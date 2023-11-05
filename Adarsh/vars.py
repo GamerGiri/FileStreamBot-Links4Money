@@ -36,7 +36,7 @@ class Var(object):
     )
     HAS_SSL = bool(getenv("HAS_SSL", False))
     URL = f"https://streaam.streaam.in/" if HAS_SSL else f"http://streaam.streaam.in/"
-    DATABASE_URL = str(getenv("DATABASE_URL", "mongodb://mongo:VPSMongoMoney@91.188.254.30:1234/?retryWrites=true&w=majority"))
+    DATABASE_URL = str(getenv("DATABASE_URL", "mongodb://mongo:500k@193.27.90.150:1234/?retryWrites=true&w=majority"))
     UPDATES_CHANNEL = str(getenv("UPDATES_CHANNEL", None))
     BANNED_CHANNELS = list(
         {int(x) for x in str(getenv("BANNED_CHANNELS", "-1001915620277")).split()}
